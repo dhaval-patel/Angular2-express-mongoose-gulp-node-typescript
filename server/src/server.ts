@@ -20,7 +20,7 @@ app.use(express.static(path.resolve(__dirname, '../client')));
 app.use(express.static(path.resolve(__dirname, '../../node_modules')));
 
 app.use(bodyParser.json());
-app.use('/api', new BaseRoutes().routes);
+//app.use('/api', new BaseRoutes().routes);
 
 var renderIndex = (req: express.Request, res: express.Response) => {
     res.sendFile(path.resolve(__dirname, '../client/index.html'));
